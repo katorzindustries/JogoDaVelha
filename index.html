@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jogo da Velha</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="centralizar">
+    <div class="cabecalho">
+        <h1>⌗ JOGO DA VELHA ⌗</h1>
+
+    </div>
+    <div id="container" class="container">
+        <div class="player1">
+            <h3>VOCÊ</h2>
+                <h2 id="X1">✖</h2>
+                <svg id="O1" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <circle cx="15" cy="15" r="9" stroke="white" stroke-width="3" fill="none" />
+                 </svg>
+                <div id="tempo"></div>
+        </div>
+
+        <div id="quadro" class="quadro grid ">
+            <div class="bloco" id="a1" onclick="pegaClick(event)"> </div>
+            <div class="bloco" id="a2" onclick="pegaClick(event)"> </div>
+            <div class="bloco" id="a3" onclick="pegaClick(event)"> </div>
+            <div class="bloco" id="b1" onclick="pegaClick(event)"> </div>
+            <div class="bloco" id="b2" onclick="pegaClick(event)"> </div>
+            <div class="bloco" id="b3" onclick="pegaClick(event)"> </div>
+            <div class="bloco" id="c1" onclick="pegaClick(event)"> </div>
+            <div class="bloco" id="c2" onclick="pegaClick(event)"> </div>
+            <div class="bloco" id="c3" onclick="pegaClick(event)"> </div>
+
+        </div>
+        <div id="player2" class="player2">
+            <h3>INIMIGO</h3>
+            <svg id="O2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <circle cx="15" cy="15" r="9" stroke="white" stroke-width="3" fill="none" />
+             </svg>
+            <h2 id="X2">✖</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
